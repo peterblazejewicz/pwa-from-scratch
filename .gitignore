@@ -38,3 +38,9 @@ jspm_packages
 
 # Bower managed dependencies
 bower_components/
+
+# Upstream
+step-*/
+final/
+resources/
+work/
