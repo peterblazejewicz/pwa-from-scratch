@@ -14,7 +14,8 @@
     "iron-list": "PolymerElements/iron-list#^1.0.0",
     "iron-scroll-threshold": "PolymerElements/iron-scroll-threshold#^1.0.0",
     "iron-selector": "PolymerElements/iron-selector#^1.0.0",
-    "iron-media-query": "PolymerElements/iron-media-query#^1.0.0"
+    "iron-media-query": "PolymerElements/iron-media-query#^1.0.0",
+    "google-youtube": "GoogleWebComponents/google-youtube#^1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
