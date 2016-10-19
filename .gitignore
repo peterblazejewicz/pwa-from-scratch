@@ -44,3 +44,6 @@ step-*/
 final/
 resources/
 work/
+
+# build
+build/
