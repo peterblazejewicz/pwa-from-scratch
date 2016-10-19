@@ -45,6 +45,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           type: Boolean,
           observer: '_activeDidChange'
         },
+        backAction: {
+          type: Function,
+          value: function() {
+            return function() {
+              window.history.back();
+              //window.location.href = '/';
+            };
+          }
+        },
         subroute: Object,
 
         videoId: {
@@ -56,9 +65,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (active) {
           this.fire('setup-toolbar', {
             leftItemIcon: 'arrow-back',
-            leftItemClickAction: function() { window.history.back(); }
+            leftItemClickAction: this._leftItemClicked.bind(this)
           });
         }
+      },
+      _leftItemClicked: function() {
+        this.backAction();
       },
       _getVideoId: function(subroute) {
         return subroute && subroute.path ? subroute.path.substr(1) : '';
